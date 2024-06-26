@@ -26,6 +26,10 @@ time, mark, audio, video {
 	border: 0;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 ol, ul {
 	list-style: none;
 }

@@ -1,4 +1,7 @@
-import styles from "./index.module.scss";
+import ListPage from "@/components/pages/ListPage";
+import useTitle from "@/hooks/useTitle";
+
 export default function ListPageEmployees() {
-    return <div className={styles.container}>ListPageEmployees</div>;
+    useTitle("List page");
+    return <ListPage />;
 }

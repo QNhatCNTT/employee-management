@@ -1,0 +1,24 @@
+.cardRoot {
+    padding: 20px;
+
+    font-size: 16px;
+    font-weight: normal;
+
+    [class*="ant-card-body"] {
+        padding: 0;
+    }
+
+    .thumbnail {
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    .description {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+}
