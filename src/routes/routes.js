@@ -6,15 +6,15 @@ import ListPageEmployees from "@/pages/ListPageEmployees";
 const routes = [
     {
         path: paths.employeeLists,
-        element: <ListPageEmployees />,
+        element: ListPageEmployees,
     },
     {
         path: paths.employeeCreate,
-        element: <CreatePageEmployee />,
+        element: CreatePageEmployee,
     },
     {
         path: paths.employeeDetail,
-        element: <DetailPageEmployee />,
+        element: DetailPageEmployee,
     },
 ];
 

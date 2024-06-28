@@ -7,7 +7,7 @@ const RootRoutes = () => {
         <BrowserRouter>
             <Routes>
                 {routes.map((route) => {
-                    return <Route key={route.path} exact path={route.path} element={route.element} />;
+                    return <Route key={route.path} exact path={route.path} element={<route.element />} />;
                 })}
                 <Route path="*" element={<NotFound />} />
             </Routes>
