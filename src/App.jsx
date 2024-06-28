@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
-import LoadingOverlay from "./components/loadings/LoadingOverlay";
 import RootRoutes from "./routes";
 import "@/styles/reset.scss";
 import { useDispatch } from "react-redux";
@@ -13,11 +12,7 @@ function App() {
     //     dispatch(actionPositionResources.apiGetListPositionResources());
     //     dispatch(actionToolLanguageResources.apiGetListToolLanguageResources());
     // }, [dispatch]);
-    return (
-        <React.Suspense fallback={<LoadingOverlay loading />}>
-            <RootRoutes />
-        </React.Suspense>
-    );
+    return <RootRoutes />;
 }
 
 export default App;
