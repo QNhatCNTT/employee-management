@@ -1,7 +1,8 @@
  const paths = {
-    employeeLists: '/',
-    employeeCreate: '/create',
-    employeeDetail: '/:id',
+    home: '/',
+    employeeLists: '/employees',
+    employeeCreate: '/employees/create',
+    employeeDetail: '/employees/:id',
 }
 
 export default paths;
