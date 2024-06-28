@@ -23,12 +23,12 @@ const detailEmployee = {
                     images: [
                         {
                             id: 1,
-                            cdnUrl: "/public/image-carousel/image-1.jpg",
+                            cdnUrl: "/image-carousel/image-1.jpg",
                             displayOrder: 0,
                         },
                         {
                             id: 2,
-                            cdnUrl: "/public/image-carousel/image-2.jpg",
+                            cdnUrl: "/image-carousel/image-2.jpg",
                             displayOrder: 1,
                         },
                     ],
