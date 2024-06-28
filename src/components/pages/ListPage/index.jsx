@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Button, Flex } from "antd";
 import styles from "./index.module.scss";
 import { PlusOutlined } from "@ant-design/icons";
@@ -10,13 +11,13 @@ import { actionEmployee } from "@/redux/actions/employee";
 import ListEmployee from "./ListEmployee";
 import { cleanObject } from "@/utils";
 export default function ListPage() {
-    const dispatch = useDispatch();
-    const [searchParams] = useSearchParams();
-    const search = searchParams.get("search");
+    // const dispatch = useDispatch();
+    // const [searchParams] = useSearchParams();
+    // const search = searchParams.get("search");
 
-    useEffect(() => {
-        dispatch(actionEmployee.apiGetListEmployee(cleanObject({ search })));
-    }, [dispatch, search]);
+    // useEffect(() => {
+    //     dispatch(actionEmployee.apiGetListEmployee(cleanObject({ search })));
+    // }, [dispatch, search]);
     return (
         <div className={styles.listPage}>
             <Flex vertical gap={20} className={styles.heading}>
@@ -32,7 +33,7 @@ export default function ListPage() {
                     </Flex>
                 </div>
             </Flex>
-            <div>
+            <div className={styles.listPageContent}>
                 <ListEmployee />
             </div>
         </div>

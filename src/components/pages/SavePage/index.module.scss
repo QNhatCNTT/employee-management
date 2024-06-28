@@ -1,0 +1,48 @@
+.savePageRoot {
+    overflow: hidden;
+
+    .layout {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px;
+    }
+
+    .heading {
+        height: 64px;
+        box-shadow: 4px 4px 40px 0 #0000000d;
+        z-index: 2;
+    }
+
+    .titlePage {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        display: block;
+    }
+
+    .actionBar {
+        height: 64px;
+        box-shadow: 4px 4px 40px 0 #0000000d;
+        z-index: 2;
+
+        .actionBtn {
+            width: 130px;
+            visibility: visible;
+
+            &.hidden {
+                visibility: hidden;
+            }
+
+            &.save {
+                background: #52c41a;
+            }
+        }
+    }
+
+    .formContainer {
+        height: calc(100vh - 64px - 64px);
+        overflow: auto;
+        z-index: 1;
+    }
+}

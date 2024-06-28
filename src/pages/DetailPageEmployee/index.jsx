@@ -1,4 +1,6 @@
-import styles from "./index.module.scss";
+import SavePage from "@/components/pages/SavePage";
+import useTitle from "@/hooks/useTitle";
 export default function DetailPageEmployee() {
-    return <div className={styles.container}>DetailPageEmployee</div>;
+    useTitle("Create page");
+    return <SavePage />;
 }

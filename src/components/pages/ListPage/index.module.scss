@@ -1,10 +1,20 @@
 .listPage {
+    position: relative;
     .heading {
+        position: sticky;
         padding: 20px 0 40px;
+        top: 0;
+        background-color: white;
+       z-index: 2;
     }
 
     .title {
         font-size: 20px;
         font-weight: 600;
+    }
+
+    .listPageContent {
+        z-index: 1;
+        padding: 24px 16px;
     }
 }

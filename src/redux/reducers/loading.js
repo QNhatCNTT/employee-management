@@ -5,7 +5,6 @@ let initState = {
 };
 
 export function loading(prevState = initState, action) {
-    console.log("action: ", action);
     switch (action.type) {
         case actionTypesLoading.START_LOADING:
             return {

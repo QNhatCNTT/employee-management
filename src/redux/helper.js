@@ -16,7 +16,6 @@ export async function processLoadingAction({ dispatch, options, payload, type })
             payload: response.data,
         });
     } catch (e) {
-        console.log(e);
         dispatch(actionLoading.finishLoading(type));
         return dispatch({
             type: FAILURE,
@@ -27,7 +26,6 @@ export async function processLoadingAction({ dispatch, options, payload, type })
 }
 
 async function sendRequest(options, payload) {
-    console.log({ options, payload });
     const { path, method, headers, query } = options;
     let fullPath = path;
     let body = payload;

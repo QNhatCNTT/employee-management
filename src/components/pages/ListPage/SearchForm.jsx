@@ -5,11 +5,10 @@ import { useSearchParams } from "react-router-dom";
 
 export default function SearchForm() {
     const keySeach = "search";
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [, setSearchParams] = useSearchParams();
     const initialValues = {
         [keySeach]: "",
     };
-    console.log("searchParams", searchParams.has(keySeach));
     const onSubmit = (value) => {
         setSearchParams(cleanObject(value));
     };

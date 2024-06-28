@@ -1,6 +1,6 @@
 .cardRoot {
     padding: 20px;
-
+    position: relative;
     font-size: 16px;
     font-weight: normal;
 
@@ -10,8 +10,8 @@
 
     .thumbnail {
         max-width: 100%;
-        object-fit: contain;
-        border-radius: 8px;
+        max-height: 200px;
+        width: 100%;
     }
 
     .description {
@@ -20,5 +20,38 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 100%;
+    }
+
+    .delButton {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: #d37b7d;
+        border-radius: 100% 100% 0 0;
+        transition: height 0.3s ease-out, visibility 0.2s ease-out, opacity 0.2s ease-out;
+    }
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 3px 16px 0px rgba(47, 83, 109, 0.12);
+        border-color: transparent;
+
+        .delButton {
+            visibility: visible;
+            opacity: 1;
+            height: 60px;
+            transition: height 0.2s ease-in, visibility 0.3s ease-in, opacity 0.3s ease-in;
+
+            .btnDel {
+                &:hover {
+                    color: #ff7875;
+                    border-color: #ff7875;
+                }
+            }
+        }
     }
 }
